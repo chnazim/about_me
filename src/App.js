@@ -16,10 +16,11 @@ const skillsData = [
 ];
 
 const projectPlaceholders = [
-  {
-    name: "Auto Carwash App",
-    description: "An auto-scheduling carwash app with customer booking and vendor management.",
-    image: "https://via.placeholder.com/400x250?text=Carwash+App",
+   {
+    name: "Swoop Car Wash App",
+    description: "An app providing eco-friendly, expert car cleaning at your doorstep with hassle-free monthly plans and real-time tracking.",
+    image: "/images/swoop_logo.png",
+     link: "https://swoopcarwash.com/",
   },
   {
     name: "Visitor Log App",
