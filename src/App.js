@@ -20,18 +20,20 @@ const projectPlaceholders = [
     name: "Swoop Car Wash App",
     description: "An app providing eco-friendly, expert car cleaning at your doorstep with hassle-free monthly plans and real-time tracking.",
     image: "/images/swoop_logo.png",
-     link: "https://swoopcarwash.com/",
+    link: "https://swoopcarwash.com/",
+  },
+   {
+    name: "AccyCloud",
+    description: "A cloud-based accounting and inventory management platform designed for GCC businesses.",
+    image: "/images/accycloud_logo.png",
+    link: "https://accycloud.com/",
   },
   {
     name: "Visitor Log App",
     description: "A visitor logging solution using Emirates ID scanning and token printing for multi-gate access.",
-    image: "https://via.placeholder.com/400x250?text=Visitor+Log+App",
-  },
-  {
-    name: "Football Stats App",
-    description: "Tournament viewer with team stats, player registrations, and rankings.",
-    image: "https://via.placeholder.com/400x250?text=Football+App",
-  },
+    image: "/images/visitor_logo.png",
+    link:"https://www.bennellin.com/index.html"
+  }
 ];
 
 function App() {
@@ -72,8 +74,10 @@ function App() {
           <section className="mb-14">
             <h2 className="text-3xl font-bold text-blue-800 mb-6 border-l-4 border-blue-500 pl-4 dark:text-white">👨‍💻 About Me</h2>
             <p className="text-lg leading-relaxed text-gray-800 dark:text-gray-200">
-              Dynamic Mobile Application Developer with 8+ years of experience in Android and Flutter. Skilled in building user-centric applications, leading teams, and delivering high-performance solutions with payment gateways, Firebase, and Google Maps integrations.
-            </p>
+              Hi, I'm Ahamed Nazim, a seasoned Mobile Application Developer with over 8 years of hands-on experience in building scalable and high-performance mobile solutions. I specialize in Flutter, Kotlin, and Java, with deep expertise in state management (BLoC, Provider), clean architecture, and MVVM patterns.
+              Throughout my career, I’ve successfully led and contributed to numerous projects involving Firebase integration (Auth, Firestore, Messaging, Crashlytics), real-time communication via STOMP/WebSocket, RESTful API and GraphQL handling, and advanced SDK integrations like Google Maps SDK, NFC-based Emirates ID reading, and QR/Barcode scanning.
+              I'm also well-versed in payment gateway integrations including Stripe, Razorpay, and PayTabs, as well as push notifications, local/remote data storage (SQLite, Hive), cloud functions, and automated CI/CD pipelines.
+              Currently, I lead the mobile app team at Appcom Solution Technologies LLC, Dubai, where I focus on delivering robust, user-centric applications that solve real-world problems. I'm passionate about crafting clean UIs, optimizing app performance, and continuously learning the evolving landscape of mobile tech.  </p>
           </section>
 
           <section className="mb-14">
@@ -92,12 +96,17 @@ function App() {
             <h2 className="text-3xl font-bold text-blue-800 mb-6 border-l-4 border-blue-500 pl-4 dark:text-white">🚀 Projects</h2>
             <Slider {...settings}>
               {projectPlaceholders.map((project, index) => (
-                <div key={index} className="px-4">
-                  <img src={project.image} alt={project.name} className="rounded-2xl shadow-lg w-full h-64 object-cover border border-gray-300" />
-                  <h3 className="text-xl font-semibold text-center mt-4 dark:text-white">{project.name}</h3>
-                  <p className="text-center text-gray-700 dark:text-gray-300 mt-2 text-sm">{project.description}</p>
-                </div>
-              ))}
+                <a
+                key={index}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 hover:scale-[1.02] transition-transform">
+                <img src={project.image} alt={project.name} className="rounded-2xl shadow-lg w-full h-64 object-cover border border-gray-300" />
+                <h3 className="text-xl font-semibold text-center mt-4 dark:text-white">{project.name}</h3>
+                <p className="text-center text-gray-700 dark:text-gray-300 mt-2 text-sm">{project.description}</p>
+                </a>
+                ))}
             </Slider>
           </section>
 
