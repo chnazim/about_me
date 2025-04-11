@@ -57,7 +57,7 @@ function App() {
 
         <div className={`bg-white/90 ${darkMode ? "bg-opacity-10" : "bg-opacity-90"} backdrop-blur-xl rounded-3xl shadow-2xl p-10 border border-blue-200`}>
           <section className="text-center mb-16">
-            <h1 className="text-5xl font-extrabold text-blue-900 dark:text-white">Ahamed Nazim Chelakkattuthodi</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-blue-900 dark:text-white">Ahamed Nazim Chelakkattuthodi</h1>
             <p className="text-xl text-gray-600 mt-2 dark:text-gray-300">Team Leader | Senior Mobile App Developer</p>
             <a
               href="/resume.pdf"
