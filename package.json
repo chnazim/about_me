@@ -2,7 +2,6 @@
   "name": "ahamed-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://chnazim.github.io/about_me",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
